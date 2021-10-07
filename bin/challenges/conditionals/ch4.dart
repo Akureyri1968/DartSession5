@@ -23,8 +23,46 @@
         double someInt = someVar.toInt() // someInt will be 10, so we can
                                          // actually check if 10 is even or not.
  */
+
 import 'dart:io';
 
-void main() {
+void main(){
+
+
+  int number1;
+  int number2;
+  String userInput;
+  double result;
+
+  print("Give me two numbers, please!");
+
+  print("Number 1:");
+  number1 = int.parse(stdin.readLineSync());
+
+  print("Number 2:");
+  number2 = int.parse(stdin.readLineSync());
+
+  print('Please enter a number betwin 0 and 4');
+
+  userInput = stdin.readLineSync();
+  if (userInput == '0') {
+  //Add
+  result = (number1 + number2).toDouble();
+  }else if (userInput == '1') {
+  //Subtract
+  result = (number1 - number2).toDouble();
+  }else if (userInput == '2') {
+  //Multiply
+  result = (number1 * number2).toDouble();
+  }else if (userInput == '3') {
+  //Divide
+  result = (number1 / number2).toDouble();
+  }else if (userInput == '4') {
+  //Modulo
+  result = (number1 % number2).toDouble();
+  } else {
+  print("I don't recognize this command....");
+  }
+print(result);
 
 }

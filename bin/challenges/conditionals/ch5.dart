@@ -10,5 +10,52 @@
 import 'dart:io';
 
 void main() {
+  int number1;
+  int number2;
+  String userInput;
+  double result;
+
+  print("Give me two numbers, please");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  if(userInput == '3'){
+    print('These number is neither even or odd ...');
+
+  }
+
+
+
 
 }

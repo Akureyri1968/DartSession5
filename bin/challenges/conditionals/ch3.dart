@@ -14,6 +14,40 @@
  */
 import 'dart:io';
 
+
 void main() {
 
+    int number1;
+    int number2;
+    String userInput;
+
+    print("Give me two numbers, please !");
+
+    print("Number 1:");
+    number1 = int.parse(stdin.readLineSync());
+
+    print("Number 2:");
+    number2 = int.parse(stdin.readLineSync());
+
+    print('Please enter a number betwin 0 and 4');
+
+    userInput = stdin.readLineSync();
+    if (userInput == '0') {
+      //Add
+      print(number1 + number2);
+    }else if (userInput == '1') {
+      //Subtract
+      print(number1 - number2);
+    }else if (userInput == '2') {
+      //Multiply
+      print(number1 * number2);
+    }else if (userInput == '3') {
+      //Divide
+      print(number1 / number2);
+    }else if (userInput == '4') {
+      //Modulo
+      print(number1 % number2);
+    } else {
+      print("I don't recognize this command....");
+    }
 }

@@ -20,7 +20,20 @@
 
 import 'dart:io';
 
+
 void main() {
+
+  bool condition;
+  int userNumber = int.parse(stdin.readLineSync());
+  condition = useNumber ! = 100;
+
+  if(userNumber == 100) {
+    print('Grate job');
+  }else{
+    print('Ohch...');
+
+  }
+
 
 
 }
